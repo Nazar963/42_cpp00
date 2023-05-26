@@ -6,13 +6,13 @@
 /*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 15:49:20 by naal-jen          #+#    #+#             */
-/*   Updated: 2023/05/24 19:39:55 by naal-jen         ###   ########.fr       */
+/*   Updated: 2023/05/26 11:36:28 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phone.class.hpp"
 
-int	main(int ac, char **av)
+int	main(void)
 {
 	int			i = 0;
 	int			j = 0;
@@ -27,7 +27,7 @@ int	main(int ac, char **av)
 		std::cin >> input;
 		if (input == "ADD")
 		{
-			if (i > 8)
+			if (i > 7)
 				i = 0;
 			phone.Add(i);
 			i++;
