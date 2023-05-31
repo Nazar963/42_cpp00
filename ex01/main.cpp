@@ -6,13 +6,13 @@
 /*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 15:49:20 by naal-jen          #+#    #+#             */
-/*   Updated: 2023/05/24 19:39:55 by naal-jen         ###   ########.fr       */
+/*   Updated: 2023/05/31 17:00:22 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phone.class.hpp"
 
-int	main(int ac, char **av)
+int	main(void)
 {
 	int			i = 0;
 	int			j = 0;
@@ -27,7 +27,7 @@ int	main(int ac, char **av)
 		std::cin >> input;
 		if (input == "ADD")
 		{
-			if (i > 8)
+			if (i > 7)
 				i = 0;
 			phone.Add(i);
 			i++;
@@ -49,7 +49,16 @@ int	main(int ac, char **av)
 					std::cin >> index;
 				}
 			}
-			std::cout << index << " | " << phone.contacts[index].first_name  <<" | " << phone.contacts[index].last_name << " | " << phone.contacts[index].nickname << std::endl;
+			std::cout << "First Name is" << std::endl;
+			std::cout << phone.contacts[index].first_name_mod << std::endl;
+			std::cout << "Last Name is" << std::endl;
+			std::cout << phone.contacts[index].last_name_mod << std::endl;
+			std::cout << "Nickname is" << std::endl;
+			std::cout << phone.contacts[index].nickname_mod << std::endl;
+			std::cout << "Phone number is" << std::endl;
+			std::cout << phone.contacts[index].phone_number_mod << std::endl;
+			std::cout << "Darkest secret is" << std::endl;
+			std::cout << phone.contacts[index].darkest_secret_mod << std::endl;
 		}
 		else if (input == "EXIT")
 			phone.Exit();

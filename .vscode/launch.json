@@ -8,8 +8,7 @@
             "type": "cppdbg",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/ex00/megaphone",
-            "args": ["Damnit", " ! ", "Sorry students, I thought this thing was off."],
+            "program": "${workspaceFolder}/ex01/phonebook",
             "cwd": "${fileDirname}",
         }
     ]

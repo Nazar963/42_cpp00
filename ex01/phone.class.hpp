@@ -6,7 +6,7 @@
 /*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 15:07:23 by naal-jen          #+#    #+#             */
-/*   Updated: 2023/05/24 15:59:13 by naal-jen         ###   ########.fr       */
+/*   Updated: 2023/05/31 16:55:04 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ class	Contact
 		std::string	nickname;
 		std::string	phone_number;
 		std::string	darkest_secret;
+
+		std::string	first_name_mod;
+		std::string	last_name_mod;
+		std::string	nickname_mod;
+		std::string	phone_number_mod;
+		std::string	darkest_secret_mod;
 };
 
 class	PhoneBook
