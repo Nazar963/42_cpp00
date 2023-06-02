@@ -6,14 +6,17 @@
 #    By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/24 11:37:53 by naal-jen          #+#    #+#              #
-#    Updated: 2023/05/31 17:44:36 by naal-jen         ###   ########.fr        #
+#    Updated: 2023/06/02 09:57:10 by naal-jen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = g++ -Wall -Wextra -Werror -std=c++98
-CFILES = main.cpp phone.class.cpp 
+CFILES = main.cpp phone.class.cpp
+EXE = phonebook
 
-all:
+all: $(EXE)
+
+$(EXE):
 	$(CC) -g $(CFILES) phone.class.hpp -o phonebook
 
 clean:
